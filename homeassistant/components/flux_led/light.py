@@ -217,6 +217,11 @@ class FluxLight(LightEntity):
     def name(self):
         """Return the name of the device if any."""
         return self._name
+    
+    @property
+    def unique_id(self) -> str:
+        """Return the unique ID of the sensor."""
+        return self._ipaddr
 
     @property
     def is_on(self):
