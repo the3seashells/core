@@ -19,11 +19,6 @@ EMPTY_CREDENTIALS = ""
 PLATFORMS = ["switch"]
 
 
-async def async_setup(hass: HomeAssistant, config: dict):
-    """Set up the Rituals Perfume Genie component."""
-    return True
-
-
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry):
     """Set up Rituals Perfume Genie from a config entry."""
     session = async_get_clientsession(hass)

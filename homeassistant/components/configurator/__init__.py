@@ -125,11 +125,6 @@ def request_done(hass, request_id):
     ).result()
 
 
-async def async_setup(hass, config):
-    """Set up the configurator component."""
-    return True
-
-
 class Configurator:
     """The class to keep track of current configuration requests."""
 
